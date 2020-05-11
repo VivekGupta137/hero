@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  torrent:
+    image:  "jpillora/cloud-torrent"
+    restart:  always
+    volumes:
+      - files:/downloads
+    ports:
+      - "63000:63000"
