@@ -8,3 +8,6 @@ services:
       - files:/downloads
     ports:
       - "63000:63000"
+      
+volumes:
+  files:
